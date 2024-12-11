@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #d6d6d6;
+}
+
+.labelChecked {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #d6d6d6;
+    position: relative;
+}
+
+.labelChecked::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.labelCheckedTrue {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #1c9c75;
+    position: relative;
+}
+
+.labelCheckedTrue::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #1c9c75;
+    border-bottom: 4px solid #1c9c75;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    transform: rotate(-45deg);
+}
+
+.labelCheckedFalse {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #b22222;
+    background-color: #b22222;
+    position: relative;
+}
+
+.labelCheckedFalse:before, .labelCheckedFalse:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+  }
+  .labelCheckedFalse:before {
+    transform: rotate(45deg);
+  }
+  .labelCheckedFalse:after {
+    transform: rotate(-45deg);
+  }
+
+  .labelUncheckedTrue {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #d6d6d6;
+    position: relative;
+}
+
+.labelUncheckedTrue::after {
+    content: "";
+    display: block;
+    width: 12px;
+    border-radius: 1px;
+    border-bottom: 2px solid #1c9c75;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
